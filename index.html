@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotspot Wi-Fi</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+    }
+
+    .login-section {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      margin: 0 0 20px 0;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .social-login {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-login button {
+      margin: 0 10px;
+    }
+
+    .social-login img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Witaj w naszym hotspot Wi-Fi!</h1>
+  </header>
+  <main>
+    <section class="login-section">
+      <h2>Zaloguj się, aby uzyskać dostęp do internetu</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Twój adres e-mail" required><br>
+        <input type="password" id="password" placeholder="Hasło" required><br>
+        <button type="submit">Zaloguj się</button>
+      </form>
+      <p>lub zaloguj się przez:</p>
+      <div class="social-login">
+        <a href="https://www.facebook.com/"><button id="facebook-login"><img src="facebook.png" alt="Facebook logo">Facebook</button></a>
+        <a href="https://accounts.google.com/"><button id="google-login"><img src="google.png" alt="Google logo">Google</button></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Nasza Firma. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
